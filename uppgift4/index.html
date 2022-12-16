@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uppgift 4</title>
+</head>
+<body>
+
+    <!-- 
+        UPPGIFT 4
+            1. Se script nedan, använd array funktionen "filter" för att returnera ut
+               alla jämna tal som är störra än 4 och mindre än 14 från arrayen.
+            2. Resultatet ska visas i diven med id "resultat" nedan.
+     -->
+    <h1>Resultat:</h1>
+    <div id="resultat"></div>
+    
+    <script>
+        let tal = [ 55, 3, 4, 7, 2, 3, 1, 6, 9, 11, 10, 13, 8, 12, 78];
+        tal = tal.filter((value) => {
+            return value > 4 && value < 14 && value % 2 == 0;
+        })
+        document.querySelector("#resultat").textContent = tal;
+    </script>
+    <!--löst-->
+</body>
+</html>
